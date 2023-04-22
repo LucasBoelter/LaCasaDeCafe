@@ -1,0 +1,187 @@
+body{
+    margin:0;
+    background-color: #000000;
+}
+
+/*Menu*/
+.menu{
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    z-index: 1;
+    overflow: none;
+}
+
+#logo{
+    padding-left: 50px;
+    float: left;
+    border-radius: 80px;
+}
+
+/* menu */
+.lista{
+    float: right;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 300%;
+}
+
+/* Alinhar menu */
+.navBar{
+    display: inline;
+    padding-left: 50px;
+    
+}
+
+/* tira sublinhado */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* troca cor quando passa o mouse */
+a:hover{
+    color: #EB1A26;  
+}
+
+/* div  CAPA */
+.banner{
+    width: 100%;
+    height: 1000px;
+    background-image: url("../imagens/capa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+/* div  QUEM SOMOS */
+#quem{
+    width: 100%;
+    height: 1200px;
+    background-image: url("../imagens/fundoquem.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+/* div  EMPRESA */
+#empresa{
+    width: 100%;
+    height: 1200px;
+    background-image: url("../imagens/fundoempresa.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+/* div  PRDUTOS */
+#nossos{
+    width: 100%;
+    height: 4300px;
+    background-image: url("../imagens/fundoprodutos.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+/* div  CONTATO */
+#cont{
+    width: 100%;
+    height: 2000px;
+    background-image: url("../imagens/fundocontato.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.titulos{
+    padding-top: 200px;
+    padding-bottom: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 650%; 
+    color: white;
+}
+
+.titulocont{
+    padding-top: 300px;
+    padding-bottom: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 600%; 
+    color: white;
+}
+
+.tituloend{
+    padding-top: 100px;
+    padding-bottom: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 600%; 
+    color: white;
+}
+
+.produtos{
+    padding-top: none;
+    padding-bottom: none;
+    padding-left: 80px;
+    width: 411px;
+    height: 539px;
+}
+
+.hora{
+    padding-top: 20px;
+    padding-left: 250px;
+    padding-bottom: none;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 350%; 
+    color: white;
+    text-align: center;
+}
+.info{
+    padding-left: 250px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 300%; 
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* O container geral define a perspectiva */  
+.flip-container { perspective: 1000; }  	
+
+/* vira os containers frente e verso quando o mouse passa em cima */
+.flip-container:hover .flipper, .flip-container.hover .flipper {  		
+  transform: rotateY(180deg);  	
+}    
+.flip-container, .front, .back {  	
+  width: 320px;  	
+  height: 480px;  
+}
+
+/* define a velocidade da transição */
+.flipper {  	
+  transition: 0.6s;  	
+  transform-style: preserve-3d;    	
+  position: relative;  
+}
+    
+/* esconde o verso durante a animação */
+.front, .back {  	
+  backface-visibility: hidden;    	
+  position: absolute;  	
+  top: 0;  	
+ left: 0;  
+}
+    
+/* frente posicionada sobre o verso */
+.front { z-index: 2;  }    
+
+/* verso inicialmente escondido */
+.back { transform: rotateY(180deg); }
